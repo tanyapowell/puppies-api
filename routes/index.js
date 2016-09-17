@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-var db = require('./../models/schema');
+var db = require('../models/schema');
 
 router.get('/', function (req, res) {
-  res.render('index', { title: 'Hey'});
+  res.render('index', { title: 'The ultimate puppy api'});
 });
 
 router.get('/api/puppies', db.getAllPuppies);
